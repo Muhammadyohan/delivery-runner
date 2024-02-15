@@ -317,6 +317,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1193483322470735048, guid: 53ee08920e935364587fe8660fd3c63f, type: 3}
+      propertyPath: m_TagString
+      value: Pizza
+      objectReference: {fileID: 0}
     - target: {fileID: 5469574054536645921, guid: 53ee08920e935364587fe8660fd3c63f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -374,53 +378,13 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 5150814288274483445, guid: 948c63da21f7633409353e8227f1544a, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.006262902
-      objectReference: {fileID: 0}
-    - target: {fileID: 5150814288274483445, guid: 948c63da21f7633409353e8227f1544a, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1.8847387
-      objectReference: {fileID: 0}
-    - target: {fileID: 5150814288274483445, guid: 948c63da21f7633409353e8227f1544a, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -1.4953489
-      objectReference: {fileID: 0}
-    - target: {fileID: 5150814288274483445, guid: 948c63da21f7633409353e8227f1544a, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.9757872
-      objectReference: {fileID: 0}
-    - target: {fileID: 5150814288274483445, guid: 948c63da21f7633409353e8227f1544a, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0.21871711
-      objectReference: {fileID: 0}
-    - target: {fileID: 5150814288274483445, guid: 948c63da21f7633409353e8227f1544a, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0.001463374
-      objectReference: {fileID: 0}
-    - target: {fileID: 5150814288274483445, guid: 948c63da21f7633409353e8227f1544a, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0.00032800497
-      objectReference: {fileID: 0}
     - target: {fileID: 5228008278672220814, guid: 948c63da21f7633409353e8227f1544a, type: 3}
       propertyPath: m_Name
       value: Player and Camera
       objectReference: {fileID: 0}
-    - target: {fileID: 6390863403723316196, guid: 948c63da21f7633409353e8227f1544a, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6390863403723316196, guid: 948c63da21f7633409353e8227f1544a, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6390863403723316196, guid: 948c63da21f7633409353e8227f1544a, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 8577999847366149593, guid: 948c63da21f7633409353e8227f1544a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 2.164
       objectReference: {fileID: 0}
     - target: {fileID: 8577999847366149593, guid: 948c63da21f7633409353e8227f1544a, type: 3}
       propertyPath: m_LocalPosition.y
