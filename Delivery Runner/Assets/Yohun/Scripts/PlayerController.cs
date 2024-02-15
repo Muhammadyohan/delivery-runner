@@ -6,6 +6,7 @@ using UnityEngine.SocialPlatforms.Impl;
 
 public class PlayerController : MonoBehaviour
 {
+    public float score = 0;
 
     private bool isJump = false;
     private bool isSlide = false;
@@ -23,6 +24,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float switchLaneDistance = 1;
     [SerializeField] private float switchLaneSpeed = 1;
     [SerializeField] private float moveForwardSpeed = 0.1f;
+    [SerializeField] private float jumpForce = 5f;
 
 
     void Awake()
@@ -45,19 +47,20 @@ public class PlayerController : MonoBehaviour
         transform.Translate(0, 0, moveForwardSpeed);
 
         //Speed Boost Handle
-        if (isSpeedBoost)
-        {
-            transform.Translate(0, 0, speedBoostForSpeedBooster);
-            playerCollider.enabled = false;
-            rbody.isKinematic = true;
-        }
-        else
-        {
-            playerCollider.enabled = true;
-            rbody.isKinematic = false;
-        }
+        SpeedBoostHandler();
 
-        //Key Bind---------------------------------
+        //Key Bind Input
+        InputHandler();
+
+        //Moving Left or Right Handle
+        lanePos = new Vector3(lanePos.x, thisTransform.position.y, thisTransform.position.z);
+        transform.position = Vector3.MoveTowards(thisTransform.position, lanePos, Time.deltaTime * switchLaneSpeed);
+
+        AnimatorHandle();
+    }
+
+    private void InputHandler()
+    {
         //Prees W for Jump
         if (Input.GetKeyDown(KeyCode.W))
             isJump = true;
@@ -100,37 +103,26 @@ public class PlayerController : MonoBehaviour
                 }
             }
         }
-        //Moving Left or Right Handle
-        lanePos = new Vector3(lanePos.x, thisTransform.position.y, thisTransform.position.z);
-        transform.position = Vector3.MoveTowards(thisTransform.position, lanePos, Time.deltaTime * switchLaneSpeed);
-
-        //-------------Animation Handle-------------
-        if (isJump)
-        {
-            anim.SetBool("isJump", isJump);
-        }
-        else if (!isJump)
-        {
-            anim.SetBool("isJump", isJump);
-        }
-
-        if (isSlide)
-        {
-            anim.SetBool("isSlide", isSlide);
-        }
-        else if (!isSlide)
-        {
-            anim.SetBool("isSlide", isSlide);
-        }
-        //--------------------------------------------
     }
 
-    private void OnTriggerEnter(Collider other) 
+    private void AnimatorHandle()
     {
-        if (other.gameObject.tag == "Speed Booster")
+        anim.SetBool("isJump", isJump);
+        anim.SetBool("isSlide", isSlide);
+    }
+
+    private void SpeedBoostHandler()
+    {
+        if (isSpeedBoost)
         {
-            Destroy (other.gameObject);
-            StartCoroutine(SpeedBoostController());
+            transform.Translate(0, 0, speedBoostForSpeedBooster);
+            playerCollider.enabled = false;
+            rbody.isKinematic = true;
+        }
+        else
+        {
+            playerCollider.enabled = true;
+            rbody.isKinematic = false;
         }
     }
 
@@ -140,5 +132,18 @@ public class PlayerController : MonoBehaviour
         yield return new WaitForSeconds(3);
         isSpeedBoost = false;
     }
+    private void OnTriggerEnter(Collider other) 
+    {
+        if (other.gameObject.tag == "Speed Booster")
+        {
+            Destroy(other.gameObject);
+            StartCoroutine(SpeedBoostController());
+        }
 
+        if (other.gameObject.tag == "Pizza")
+        {
+            Destroy(other.gameObject);
+            score += 1;
+        }
+    }
 }
