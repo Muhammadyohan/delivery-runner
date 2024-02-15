@@ -1,34 +1,9 @@
 fileFormatVersion: 2
-guid: 4d0c84a31f577cb438a60f017805b6bd
+guid: 58cb5caf25386c1419df74b7caced7e4
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Ch29_Body
-    second: {fileID: 2100000, guid: 5b93ff9e8bd66154dab8f8e2784ded57, type: 2}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: Ch29_1001_Diffuse
-    second: {fileID: 2800000, guid: 36948b9351f6c8440b4f2556b4d4f3e2, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: Ch29_1001_Glossiness
-    second: {fileID: 2800000, guid: fbf3da77752969246a68cf8917433794, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: Ch29_1001_Normal
-    second: {fileID: 2800000, guid: 9f31993816e4b55479bf33a53b33c049, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: Ch29_1001_Specular
-    second: {fileID: 2800000, guid: 9b25cf2a4c9be2f4195efb60f1001478, type: 3}
+  externalObjects: {}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -58,18 +33,18 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: mixamo.com
+      name: Falling To Landing
       takeName: mixamo.com
       internalID: -203655887218126122
       firstFrame: 0
-      lastFrame: 16
+      lastFrame: 4.1
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 1
+      loopTime: 0
       loopBlend: 1
       loopBlendOrientation: 0
       loopBlendPositionY: 0
