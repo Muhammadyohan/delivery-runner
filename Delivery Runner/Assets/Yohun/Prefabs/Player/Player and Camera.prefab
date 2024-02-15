@@ -107,6 +107,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 6051492970178838878}
   offset: {x: 0, y: 0, z: 0}
+  smoothTime: 0.1
 --- !u!1 &5228008278672220814
 GameObject:
   m_ObjectHideFlags: 0
@@ -372,8 +373,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speedBoostForSpeedBooster: 1
-  switchLaneDistance: 1
-  switchLaneSpeed: 8
+  switchLaneDistance: 3.5
+  switchLaneSpeed: 9
   moveForwardSpeed: 0.1
 --- !u!4 &6390863403723316196 stripped
 Transform:
