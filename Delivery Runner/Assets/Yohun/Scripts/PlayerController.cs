@@ -28,6 +28,7 @@ public class PlayerController : MonoBehaviour
     void Awake()
     {
         thisTransform = transform;
+        lanePos.x = thisTransform.position.x;
     }
 
     void Start()
