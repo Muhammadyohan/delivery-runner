@@ -17,16 +17,28 @@ PrefabInstance:
       value: Can_cola 1 Speed Booster
       objectReference: {fileID: 0}
     - target: {fileID: 4450026544068382, guid: d6fa50c58d894ae458c8bdf2d61e5eec, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4450026544068382, guid: d6fa50c58d894ae458c8bdf2d61e5eec, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4450026544068382, guid: d6fa50c58d894ae458c8bdf2d61e5eec, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4450026544068382, guid: d6fa50c58d894ae458c8bdf2d61e5eec, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.009
+      value: 0.0037679821
       objectReference: {fileID: 0}
     - target: {fileID: 4450026544068382, guid: d6fa50c58d894ae458c8bdf2d61e5eec, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.79
+      value: 0.000004529953
       objectReference: {fileID: 0}
     - target: {fileID: 4450026544068382, guid: d6fa50c58d894ae458c8bdf2d61e5eec, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 5.968399
+      value: -2.775313
       objectReference: {fileID: 0}
     - target: {fileID: 4450026544068382, guid: d6fa50c58d894ae458c8bdf2d61e5eec, type: 3}
       propertyPath: m_LocalRotation.w
