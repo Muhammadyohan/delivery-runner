@@ -135,9 +135,21 @@ PrefabInstance:
       propertyPath: jumpForce
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 4685802093977483623, guid: 948c63da21f7633409353e8227f1544a, type: 3}
+      propertyPath: rollingIframeTime
+      value: 0.35
+      objectReference: {fileID: 0}
     - target: {fileID: 5228008278672220814, guid: 948c63da21f7633409353e8227f1544a, type: 3}
       propertyPath: m_Name
       value: Player and Camera
+      objectReference: {fileID: 0}
+    - target: {fileID: 5279196881542169842, guid: 948c63da21f7633409353e8227f1544a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.914
+      objectReference: {fileID: 0}
+    - target: {fileID: 6390863403723316196, guid: 948c63da21f7633409353e8227f1544a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.475
       objectReference: {fileID: 0}
     - target: {fileID: 8577999847366149593, guid: 948c63da21f7633409353e8227f1544a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -149,7 +161,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8577999847366149593, guid: 948c63da21f7633409353e8227f1544a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -25.86
+      value: -20.6
       objectReference: {fileID: 0}
     - target: {fileID: 8577999847366149593, guid: 948c63da21f7633409353e8227f1544a, type: 3}
       propertyPath: m_LocalRotation.w
@@ -383,34 +395,14 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1638810812}
-  - component: {fileID: 1638810811}
+  - component: {fileID: 1638810813}
   m_Layer: 0
   m_Name: TileSpawner
-  m_TagString: Untagged
+  m_TagString: Slide
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1638810811
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1638810810}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bc8d9e23970f9774ea4b6c588549cce7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Prefabs:
-  - {fileID: 7897465313828899401, guid: 3f5dde30810830e4c9d367c7c09d9dd7, type: 3}
-  - {fileID: 748259444329187286, guid: 4945d661cc9688749b3bb16a9a6801fd, type: 3}
-  BackArea: 100
-  PrefabsOnScreen: 4
-  LastPrefab: 0
-  SpawnPrefab: -119
-  PrefabLength: 118
 --- !u!4 &1638810812
 Transform:
   m_ObjectHideFlags: 0
@@ -426,6 +418,27 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1638810813
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1638810810}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc8d9e23970f9774ea4b6c588549cce7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Prefabs:
+  - {fileID: 7897465313828899401, guid: 3f5dde30810830e4c9d367c7c09d9dd7, type: 3}
+  - {fileID: 748259444329187286, guid: 4945d661cc9688749b3bb16a9a6801fd, type: 3}
+  - {fileID: 2919788169907495991, guid: e63a4fe9023c6b748920f2f334aea81e, type: 3}
+  BackArea: 50
+  PrefabsOnScreen: 4
+  LastPrefab: 0
+  SpawnPrefab: -119
+  PrefabLength: 119
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

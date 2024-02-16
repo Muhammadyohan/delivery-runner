@@ -700,7 +700,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1400552942729097331, guid: 6a5bef6bf98588c4ea57c8dfaaade687, type: 3}
       propertyPath: m_Name
-      value: Tile03 Variant
+      value: Tile03_Obstancle01
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1550,7 +1550,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5824827047540044482, guid: 487bc9cb4be399f42b757ffebe14fd1a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -18.34
       objectReference: {fileID: 0}
     - target: {fileID: 5824827047540044482, guid: 487bc9cb4be399f42b757ffebe14fd1a, type: 3}
       propertyPath: m_LocalRotation.w
