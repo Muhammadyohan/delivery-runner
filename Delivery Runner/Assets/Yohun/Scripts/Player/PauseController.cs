@@ -5,7 +5,7 @@ using UnityEngine.Events;
 
 public class PauseController : MonoBehaviour
 {
-    public UnityEvent  GamePaused;
+    public UnityEvent GamePaused;
     public UnityEvent GameResumed;
 
     private bool _isPaused;
