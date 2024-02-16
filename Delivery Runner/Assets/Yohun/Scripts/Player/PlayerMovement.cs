@@ -22,6 +22,8 @@ public class PlayerMovement : MonoBehaviour
     private bool isJumping;
     private bool isGrounded;
     private bool isRolling = false;
+    private float magnitude;
+    private Vector3 velocity;
 
     private enum Lane {Lane1, Lane2, Lane3};
     private Lane lane;
@@ -40,7 +42,7 @@ public class PlayerMovement : MonoBehaviour
     {
         //Endless Running Calculate
         Vector3 moveMentDirection = new Vector3(0, 0, 1);
-        float magnitude = Mathf.Clamp01(moveMentDirection.magnitude) * speed;
+        magnitude = Mathf.Clamp01(moveMentDirection.magnitude) * speed;
         moveMentDirection.Normalize();
 
         //Gravity
@@ -108,17 +110,20 @@ public class PlayerMovement : MonoBehaviour
             }
         }
 
-        //Make Character Move
-        Vector3 velocity = moveMentDirection * magnitude;
+        //Calculate for Making Character Move
+        velocity = moveMentDirection * magnitude;
         velocity.y = ySpeed;
 
-        //Lane switch handle
+        //Lane switch 
         LaneSwitchInputHandler();
         lanePos = new Vector3(lanePos.x, transform.position.y, transform.position.z);
+
+        //Lane switching
         MoveTowardsTarget(lanePos);
 
+        //Movement
         characterController.Move(velocity * Time.deltaTime);
-    }
+        }
 
     private void MoveTowardsTarget(Vector3 target)
     {
