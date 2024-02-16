@@ -383,6 +383,7 @@ MonoBehaviour:
   fallingCheckNum: 5.3
   laneSwitchSpeed: 10
   laneSwitchDistance: 3.75
+  rollingIframeTime: 0.25
 --- !u!114 &7222980337953896804
 MonoBehaviour:
   m_ObjectHideFlags: 0
