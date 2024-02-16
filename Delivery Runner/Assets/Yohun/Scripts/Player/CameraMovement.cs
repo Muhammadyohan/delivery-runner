@@ -1,8 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-public class CameraMovement : MonoBehaviour {
-
+public class CameraMovement : MonoBehaviour 
+{
 	public GameObject player;
 	public Vector3 offset;
     private Vector3 velocity;
@@ -30,9 +30,29 @@ public class CameraMovement : MonoBehaviour {
         transform.position = Vector3.Slerp(thisTransform.position, newPosForSmoothing, Time.time);
     }
 
-	// void LateUpdate () 
-    // {
-	// 	// transform.position = player.transform.position + offset;
-    //     // transform.position = new Vector3(transform.position.x, player.transform.position.y + offset.y, player.transform.position.z + offset.z);
-	// }
+    public void CameraShake()
+    {
+        StartCoroutine(Shake(.25f, .1f));
+    }
+
+	IEnumerator Shake (float duration, float magnitude)
+    {
+        Vector3 originalPos = transform.localPosition;
+
+        float elapsed = 0.0f;
+
+        while (elapsed < duration)
+        {
+            float x = Random.Range(-1f, 1f) * magnitude;
+            float y = Random.Range(-1f, 1f) * magnitude;
+
+            transform.localPosition = new Vector3(x, y, originalPos.z);
+
+            elapsed += Time.unscaledDeltaTime;
+
+            yield return null;
+        }
+
+        transform.localPosition = originalPos;
+    }
 }

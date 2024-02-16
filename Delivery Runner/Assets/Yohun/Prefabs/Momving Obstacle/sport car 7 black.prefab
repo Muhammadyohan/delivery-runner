@@ -10,15 +10,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7421789813905929039, guid: 6c8e34b11dbae6b4297f2ae6b4caa72a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.01
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7421789813905929039, guid: 6c8e34b11dbae6b4297f2ae6b4caa72a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.00000047683716
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7421789813905929039, guid: 6c8e34b11dbae6b4297f2ae6b4caa72a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 249.8
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7421789813905929039, guid: 6c8e34b11dbae6b4297f2ae6b4caa72a, type: 3}
       propertyPath: m_LocalRotation.w
@@ -50,7 +50,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7905134766952409589, guid: 6c8e34b11dbae6b4297f2ae6b4caa72a, type: 3}
       propertyPath: m_Name
-      value: sport car 7 black Variant
+      value: sport car 7 black
       objectReference: {fileID: 0}
     - target: {fileID: 7905134766952409589, guid: 6c8e34b11dbae6b4297f2ae6b4caa72a, type: 3}
       propertyPath: m_IsActive
