@@ -1,8 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using DG.Tweening;
 public class CameraMovement : MonoBehaviour 
 {
+    // public static CameraMovement Instance;
 	public GameObject player;
 	public Vector3 offset;
     private Vector3 velocity;
@@ -11,7 +13,8 @@ public class CameraMovement : MonoBehaviour
 
     [SerializeField] private float smoothTime = 0.3f;
 
-    void Awake ()
+    // private void Awake() => Instance = this;
+    private void Awake() 
     {
         thisTransform = transform;
         velocity = new Vector3(0.5f, 0.5f, 0.5f);
@@ -30,6 +33,16 @@ public class CameraMovement : MonoBehaviour
         transform.position = Vector3.Slerp(thisTransform.position, newPosForSmoothing, Time.time);
     }
 
+    // private IEnumerator OnShake(float duration, float strength)
+    // {
+    //     transform.DOShakePosition(duration, strength);
+    //     transform.DOShakeRotation(duration, strength);
+    //     yield return null; 
+
+    // }
+
+    // public static void Shake(float duration, float strength) => Instance.StartCoroutine(Instance.OnShake(duration, strength));
+
     public void CameraShake()
     {
         StartCoroutine(Shake(.25f, .1f));
@@ -38,15 +51,15 @@ public class CameraMovement : MonoBehaviour
 	IEnumerator Shake (float duration, float magnitude)
     {
         Vector3 originalPos = transform.localPosition;
+        Debug.Log(originalPos);
 
         float elapsed = 0.0f;
 
         while (elapsed < duration)
         {
-            float x = Random.Range(-1f, 1f) * magnitude;
-            float y = Random.Range(-1f, 1f) * magnitude;
+            float y = Random.Range(originalPos.y - 1f, originalPos.y + 1f) * magnitude;
 
-            transform.localPosition = new Vector3(x, y, originalPos.z);
+            transform.localPosition = new Vector3(originalPos.x, y, originalPos.z);
 
             elapsed += Time.unscaledDeltaTime;
 

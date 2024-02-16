@@ -42,6 +42,7 @@ public class PlayerMovement : MonoBehaviour
         characterController = GetComponent<CharacterController>();
         originalStepOffset = characterController.stepOffset;
         lane = Lane.Lane2;
+        lastRolledTime = Time.time;
     }
 
     void Update()
@@ -138,7 +139,7 @@ public class PlayerMovement : MonoBehaviour
         var offset = target - transform.position;
         if (offset.magnitude > .1f)
         {
-            offset = offset.normalized * laneSwitchSpeed;
+            offset = offset * laneSwitchSpeed;
             cc.Move(offset * Time.deltaTime);
         }
     }
@@ -184,6 +185,7 @@ public class PlayerMovement : MonoBehaviour
         if (other.gameObject.tag == "Obstacle")
         {
             animator.SetBool("IsKnockDown", true);
+            // CameraMovement.Shake(.25f, .1f);
             GameOver.Invoke();
         }
 
@@ -192,6 +194,7 @@ public class PlayerMovement : MonoBehaviour
             if (Time.time - lastRolledTime > rollingIframeTime)
             {
                 animator.SetBool("IsKnockDown", true);
+                // CameraMovement.Shake(.25f, .1f);
                 GameOver.Invoke();
             }
         }
