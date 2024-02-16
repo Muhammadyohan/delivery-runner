@@ -133,7 +133,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4685802093977483623, guid: 948c63da21f7633409353e8227f1544a, type: 3}
       propertyPath: jumpForce
-      value: 7
+      value: 7.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4685802093977483623, guid: 948c63da21f7633409353e8227f1544a, type: 3}
+      propertyPath: laneSwitchSpeed
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4685802093977483623, guid: 948c63da21f7633409353e8227f1544a, type: 3}
       propertyPath: rollingIframeTime
@@ -445,5 +449,5 @@ SceneRoots:
   m_Roots:
   - {fileID: 963194228}
   - {fileID: 705507995}
-  - {fileID: 319790118}
   - {fileID: 1638810812}
+  - {fileID: 319790118}
