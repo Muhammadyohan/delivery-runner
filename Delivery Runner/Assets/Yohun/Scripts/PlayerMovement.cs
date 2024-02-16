@@ -7,7 +7,6 @@ public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] private float speed;
     [SerializeField] private float jumpForce;
-    [SerializeField] private float customGravity = 9.81f;
     [SerializeField] private float buttonGracePeriod;
     [SerializeField] private float fallingCheckNum = 5;
     [SerializeField] private float laneSwitchSpeed = 1;
@@ -19,7 +18,6 @@ public class PlayerMovement : MonoBehaviour
     private float originalStepOffset;
     private float? lastGroundedTime;
     private float? jumpButtonPressedTime;
-    private float? slideButtonPressedTime;
     private bool isJumping;
     private bool isGrounded;
     private bool isRolling = false;
@@ -44,7 +42,7 @@ public class PlayerMovement : MonoBehaviour
         moveMentDirection.Normalize();
 
         //Gravity
-        ySpeed += -(customGravity) * Time.deltaTime;
+        ySpeed += Physics.gravity.y * Time.deltaTime;
 
 
 
@@ -122,11 +120,12 @@ public class PlayerMovement : MonoBehaviour
 
     private void MoveTowardsTarget(Vector3 target)
     {
+        var cc = GetComponent<CharacterController>();
         var offset = target - transform.position;
         if (offset.magnitude > .1f)
         {
             offset = offset.normalized * laneSwitchSpeed;
-            characterController.Move(offset * Time.deltaTime);
+            cc.Move(offset * Time.deltaTime);
         }
     }
 
