@@ -6,10 +6,6 @@ using UnityEngine.SocialPlatforms.Impl;
 
 public class PlayerAttributeBooster : MonoBehaviour
 {
-    public int NumberOfPizza {get; private set;}
-
-    public
-
     void Awake()
     {
 

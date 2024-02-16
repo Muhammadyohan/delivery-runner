@@ -12,17 +12,33 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Pizza
       objectReference: {fileID: 0}
-    - target: {fileID: 5469574054536645921, guid: 53ee08920e935364587fe8660fd3c63f, type: 3}
-      propertyPath: m_LocalPosition.x
+    - target: {fileID: 1197292014171069332, guid: 53ee08920e935364587fe8660fd3c63f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1197292014171069332, guid: 53ee08920e935364587fe8660fd3c63f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1197292014171069332, guid: 53ee08920e935364587fe8660fd3c63f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1197292014171069332, guid: 53ee08920e935364587fe8660fd3c63f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5469574054536645921, guid: 53ee08920e935364587fe8660fd3c63f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.18
+      objectReference: {fileID: 0}
+    - target: {fileID: 5469574054536645921, guid: 53ee08920e935364587fe8660fd3c63f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.993
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5469574054536645921, guid: 53ee08920e935364587fe8660fd3c63f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 3.25
+      value: 8.826091
       objectReference: {fileID: 0}
     - target: {fileID: 5469574054536645921, guid: 53ee08920e935364587fe8660fd3c63f, type: 3}
       propertyPath: m_LocalRotation.w
@@ -54,7 +70,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6511549232372841396, guid: 53ee08920e935364587fe8660fd3c63f, type: 3}
       propertyPath: m_Name
-      value: Pizza Prefab Variant
+      value: Pizza Prefab
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

@@ -22,7 +22,7 @@ public class CameraMovement : MonoBehaviour {
 		offset = transform.position - player.transform.position;
 	}
 	
-    void Update ()
+    void LateUpdate ()
     {
         newPosForSmoothing.x = Mathf.SmoothDamp(thisTransform.position.x, player.transform.position.x + offset.x, ref velocity.x, smoothTime);
         newPosForSmoothing.y = Mathf.SmoothDamp(thisTransform.position.y, player.transform.position.y + offset.y, ref velocity.y, smoothTime);
