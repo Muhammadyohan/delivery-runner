@@ -16,6 +16,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float fallingCheckNum = 5;
     [SerializeField] private float laneSwitchSpeed = 1;
     [SerializeField] private float laneSwitchDistance = 1;
+    [SerializeField] private float rollingIframeTime;
 
     private Animator animator;
     private CharacterController characterController;
@@ -23,13 +24,12 @@ public class PlayerMovement : MonoBehaviour
     private float originalStepOffset;
     private float? lastGroundedTime;
     private float? jumpButtonPressedTime;
+    private float? lastRolledTime;
     private bool isJumping;
     private bool isGrounded;
     private bool isRolling = false;
     private float magnitude;
     private Vector3 velocity;
-
-    private bool rollingIframe;
 
     private enum Lane {Lane1, Lane2, Lane3};
     private Lane lane;
@@ -87,6 +87,7 @@ public class PlayerMovement : MonoBehaviour
             if (isRolling)
             {
                 StartCoroutine(SlidingAnimationHandler());
+                lastRolledTime = Time.time;
                 isRolling = false;
             }
 
@@ -184,6 +185,15 @@ public class PlayerMovement : MonoBehaviour
         {
             animator.SetBool("IsKnockDown", true);
             GameOver.Invoke();
+        }
+
+        if (other.gameObject.tag == "Slide")
+        {
+            if (Time.time - lastRolledTime > rollingIframeTime)
+            {
+                animator.SetBool("IsKnockDown", true);
+                GameOver.Invoke();
+            }
         }
     }
 
