@@ -11,6 +11,7 @@ public class Pizza : MonoBehaviour
         if (playerInventory != null)
         {
             playerInventory.PizzaCollected();
+            playerInventory.PizzaAmountSpeedBoost();
             gameObject.SetActive(false);
         }
     }

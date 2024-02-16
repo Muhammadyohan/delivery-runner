@@ -6,6 +6,7 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     public float speed;
+    [HideInInspector] public float speedBuffer;
     [SerializeField] private float jumpForce;
     [SerializeField] private float buttonGracePeriod;
     [SerializeField] private float fallingCheckNum = 5;
@@ -28,6 +29,7 @@ public class PlayerMovement : MonoBehaviour
 
     void Start()
     {
+        speedBuffer = speed;
         animator = GetComponent<Animator>();
         characterController = GetComponent<CharacterController>();
         originalStepOffset = characterController.stepOffset;
