@@ -144,6 +144,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1851022737493757488, guid: ece9e4c2c5790c34589339ca8cd10f8a, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 5bb9421d13a7b884daa9976a3fc5aaf1, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -226,7 +230,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6654301493710084385, guid: 5ca6b3fa6bb141d4681298e46191cf55, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.9
+      value: -3.8
       objectReference: {fileID: 0}
     - target: {fileID: 6654301493710084385, guid: 5ca6b3fa6bb141d4681298e46191cf55, type: 3}
       propertyPath: m_LocalPosition.y
@@ -286,6 +290,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 3701499129787204114}
     m_Modifications:
+    - target: {fileID: 5091458769554061657, guid: 65a16dbd2e29ddd47afad9cdd09dbf61, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: eac8ee0fad493324980f647be3eb8259, type: 2}
     - target: {fileID: 5998420868013603944, guid: 65a16dbd2e29ddd47afad9cdd09dbf61, type: 3}
       propertyPath: m_LocalPosition.x
       value: 3.95
@@ -330,6 +338,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: truck 3 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6379884129492468934, guid: 65a16dbd2e29ddd47afad9cdd09dbf61, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: eac8ee0fad493324980f647be3eb8259, type: 2}
+    - target: {fileID: 6419715285293004049, guid: 65a16dbd2e29ddd47afad9cdd09dbf61, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 258617b563e2f684197d00434f84cd42, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -412,7 +428,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 104127843161006826, guid: 79294c8f87000c14f9ba683e18251230, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.05
+      value: 3.61
       objectReference: {fileID: 0}
     - target: {fileID: 104127843161006826, guid: 79294c8f87000c14f9ba683e18251230, type: 3}
       propertyPath: m_LocalPosition.y
@@ -770,6 +786,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1851022737493757488, guid: ece9e4c2c5790c34589339ca8cd10f8a, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 258617b563e2f684197d00434f84cd42, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -974,6 +994,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 3701499129787204114}
     m_Modifications:
+    - target: {fileID: 5091458769554061657, guid: 65a16dbd2e29ddd47afad9cdd09dbf61, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: eac8ee0fad493324980f647be3eb8259, type: 2}
     - target: {fileID: 5998420868013603944, guid: 65a16dbd2e29ddd47afad9cdd09dbf61, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -1018,6 +1042,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: truck 3
       objectReference: {fileID: 0}
+    - target: {fileID: 6379884129492468934, guid: 65a16dbd2e29ddd47afad9cdd09dbf61, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: eac8ee0fad493324980f647be3eb8259, type: 2}
+    - target: {fileID: 6419715285293004049, guid: 65a16dbd2e29ddd47afad9cdd09dbf61, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 5bb9421d13a7b884daa9976a3fc5aaf1, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1100,7 +1132,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7503440065533581707, guid: 69d451a9ab5b20042aecf24c6025210b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.89
+      value: -4.8
       objectReference: {fileID: 0}
     - target: {fileID: 7503440065533581707, guid: 69d451a9ab5b20042aecf24c6025210b, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1332,6 +1364,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1851022737493757488, guid: ece9e4c2c5790c34589339ca8cd10f8a, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 3bf93228ef1e45846bc35fbae85c3261, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1418,7 +1454,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 104127843161006826, guid: 79294c8f87000c14f9ba683e18251230, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.05
+      value: 3.61
       objectReference: {fileID: 0}
     - target: {fileID: 104127843161006826, guid: 79294c8f87000c14f9ba683e18251230, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1480,7 +1516,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 104127843161006826, guid: 79294c8f87000c14f9ba683e18251230, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.05
+      value: 3.61
       objectReference: {fileID: 0}
     - target: {fileID: 104127843161006826, guid: 79294c8f87000c14f9ba683e18251230, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1708,6 +1744,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1851022737493757488, guid: ece9e4c2c5790c34589339ca8cd10f8a, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 5bb9421d13a7b884daa9976a3fc5aaf1, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1728,7 +1768,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 104127843161006826, guid: 79294c8f87000c14f9ba683e18251230, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.05
+      value: 3.61
       objectReference: {fileID: 0}
     - target: {fileID: 104127843161006826, guid: 79294c8f87000c14f9ba683e18251230, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1850,6 +1890,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 3701499129787204114}
     m_Modifications:
+    - target: {fileID: 5091458769554061657, guid: 65a16dbd2e29ddd47afad9cdd09dbf61, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 5bb9421d13a7b884daa9976a3fc5aaf1, type: 2}
     - target: {fileID: 5998420868013603944, guid: 65a16dbd2e29ddd47afad9cdd09dbf61, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -1894,6 +1938,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: truck 3 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 6379884129492468934, guid: 65a16dbd2e29ddd47afad9cdd09dbf61, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 5bb9421d13a7b884daa9976a3fc5aaf1, type: 2}
+    - target: {fileID: 6419715285293004049, guid: 65a16dbd2e29ddd47afad9cdd09dbf61, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 5bb9421d13a7b884daa9976a3fc5aaf1, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2018,6 +2070,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1851022737493757488, guid: ece9e4c2c5790c34589339ca8cd10f8a, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 3b41e5ba45f5cb34babf2e5d9da25465, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
