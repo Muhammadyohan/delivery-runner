@@ -258,6 +258,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 48de2b8fd32eb884391076dcdcb82575, type: 3}
       insertIndex: -1
       addedObject: {fileID: 6041169980058356228}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 48de2b8fd32eb884391076dcdcb82575, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3790162204803469131}
   m_SourcePrefab: {fileID: 100100000, guid: 48de2b8fd32eb884391076dcdcb82575, type: 3}
 --- !u!1 &6051492970178838878 stripped
 GameObject:
@@ -346,9 +349,36 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9142cfd6ee6d4146b7a97a51e4aeaf9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  GameOver:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 3790162204803469131}
+        m_TargetAssemblyTypeName: KnockDownController, Assembly-CSharp
+        m_MethodName: KnockDowned
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 4685802093977483623}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   speed: 6
   speedBuffer: 0
-  jumpForce: 10
+  jumpForce: 7
   buttonGracePeriod: 0.2
   fallingCheckNum: 5.3
   laneSwitchSpeed: 10
@@ -438,6 +468,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+--- !u!114 &3790162204803469131
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6051492970178838878}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cbc4fec1a2537e14f865a0bc9af69a97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &6390863403723316196 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 48de2b8fd32eb884391076dcdcb82575, type: 3}

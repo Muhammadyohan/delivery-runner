@@ -2,11 +2,15 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class PlayerMovement : MonoBehaviour
 {
+    public UnityEvent GameOver;
+
     public float speed;
     [HideInInspector] public float speedBuffer;
+
     [SerializeField] private float jumpForce;
     [SerializeField] private float buttonGracePeriod;
     [SerializeField] private float fallingCheckNum = 5;
@@ -171,6 +175,15 @@ public class PlayerMovement : MonoBehaviour
                     lane = Lane.Lane3;
                 }
             }
+        }
+    }
+
+    private void OnTriggerEnter(Collider other) 
+    {
+        if (other.gameObject.tag == "Obstacle")
+        {
+            animator.SetBool("IsKnockDown", true);
+            GameOver.Invoke();
         }
     }
 
