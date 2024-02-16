@@ -10,11 +10,6 @@ public class PauseController : MonoBehaviour
 
     private bool _isPaused;
 
-    void Start()
-    {
-        
-    }
-
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))

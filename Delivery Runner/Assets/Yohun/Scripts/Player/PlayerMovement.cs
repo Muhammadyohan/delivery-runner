@@ -25,6 +25,8 @@ public class PlayerMovement : MonoBehaviour
     private float magnitude;
     private Vector3 velocity;
 
+    private bool rollingIframe;
+
     private enum Lane {Lane1, Lane2, Lane3};
     private Lane lane;
     private Vector3 lanePos;
