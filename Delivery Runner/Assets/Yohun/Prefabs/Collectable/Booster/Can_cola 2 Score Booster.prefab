@@ -10,19 +10,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1618410705010438, guid: 830afb5dbf1214744bd335aded2af8bf, type: 3}
       propertyPath: m_Name
-      value: Can_cola 2 prefab Variant
+      value: Can_cola 2 Score Booster
       objectReference: {fileID: 0}
     - target: {fileID: 4441627224141016, guid: 830afb5dbf1214744bd335aded2af8bf, type: 3}
       propertyPath: m_LocalScale.x
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4441627224141016, guid: 830afb5dbf1214744bd335aded2af8bf, type: 3}
       propertyPath: m_LocalScale.y
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4441627224141016, guid: 830afb5dbf1214744bd335aded2af8bf, type: 3}
       propertyPath: m_LocalScale.z
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4441627224141016, guid: 830afb5dbf1214744bd335aded2af8bf, type: 3}
       propertyPath: m_LocalPosition.x
