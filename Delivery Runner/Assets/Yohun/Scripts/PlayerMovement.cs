@@ -59,7 +59,7 @@ public class PlayerMovement : MonoBehaviour
         //Sliding Keybind
         if (Input.GetKeyDown(KeyCode.S))
         {
-            ySpeed -= 10;
+            ySpeed = -3;
             isRolling = true;
         }
 
