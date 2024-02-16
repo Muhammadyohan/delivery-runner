@@ -242,13 +242,13 @@ PrefabInstance:
       addedObject: {fileID: 8525285212676494973}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 48de2b8fd32eb884391076dcdcb82575, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 8663637773652480452}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 48de2b8fd32eb884391076dcdcb82575, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 4414691846752042181}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 48de2b8fd32eb884391076dcdcb82575, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 3520980809290427388}
+      addedObject: {fileID: 4583831039823955945}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 48de2b8fd32eb884391076dcdcb82575, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4685802093977483623}
   m_SourcePrefab: {fileID: 100100000, guid: 48de2b8fd32eb884391076dcdcb82575, type: 3}
 --- !u!1 &6051492970178838878 stripped
 GameObject:
@@ -276,33 +276,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!54 &8663637773652480452
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6051492970178838878}
-  serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 80
-  m_CollisionDetection: 0
 --- !u!136 &4414691846752042181
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -326,7 +299,33 @@ CapsuleCollider:
   m_Height: 1.6085032
   m_Direction: 1
   m_Center: {x: -0.002670467, y: 0.7980018, z: 0}
---- !u!114 &3520980809290427388
+--- !u!143 &4583831039823955945
+CharacterController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6051492970178838878}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Height: 1.58
+  m_Radius: 0.13
+  m_SlopeLimit: 45
+  m_StepOffset: 0.3
+  m_SkinWidth: 0.08
+  m_MinMoveDistance: 0.001
+  m_Center: {x: 0, y: 0.81, z: 0}
+--- !u!114 &4685802093977483623
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -335,15 +334,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 6051492970178838878}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ca823ac88c961034fa010f050b613566, type: 3}
+  m_Script: {fileID: 11500000, guid: c9142cfd6ee6d4146b7a97a51e4aeaf9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  score: 0
-  speedBoostForSpeedBooster: 1
-  switchLaneDistance: 3.75
-  switchLaneSpeed: 10
-  moveForwardSpeed: 0.2
-  jumpForce: 200
+  speed: 6
+  jumpForce: 8
+  customGravity: 3
+  buttonGracePeriod: 0.2
+  fallingCheckNum: 6.1
+  laneSwitchSpeed: 10
+  laneSwitchDistance: 3.75
 --- !u!4 &6390863403723316196 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 48de2b8fd32eb884391076dcdcb82575, type: 3}

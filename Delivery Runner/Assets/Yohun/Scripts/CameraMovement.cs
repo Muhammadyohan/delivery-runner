@@ -24,8 +24,8 @@ public class CameraMovement : MonoBehaviour {
 	
     void Update ()
     {
-        newPosForSmoothing.x = Mathf.SmoothDamp(thisTransform.position.x, player.transform.position.x, ref velocity.x, smoothTime) + offset.x;
-        newPosForSmoothing.y = player.transform.position.y + offset.y;
+        newPosForSmoothing.x = Mathf.SmoothDamp(thisTransform.position.x, player.transform.position.x + offset.x, ref velocity.x, smoothTime);
+        newPosForSmoothing.y = Mathf.SmoothDamp(thisTransform.position.y, player.transform.position.y + offset.y, ref velocity.y, smoothTime);
         newPosForSmoothing.z = player.transform.position.z + offset.z;
         transform.position = Vector3.Slerp(thisTransform.position, newPosForSmoothing, Time.time);
     }
