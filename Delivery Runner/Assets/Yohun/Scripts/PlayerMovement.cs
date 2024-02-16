@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    [SerializeField] private float speed;
+    public float speed;
     [SerializeField] private float jumpForce;
     [SerializeField] private float buttonGracePeriod;
     [SerializeField] private float fallingCheckNum = 5;

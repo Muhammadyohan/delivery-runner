@@ -16,6 +16,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Can_cola 1 Speed Booster
       objectReference: {fileID: 0}
+    - target: {fileID: 4375436980002226, guid: d6fa50c58d894ae458c8bdf2d61e5eec, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.2
+      objectReference: {fileID: 0}
     - target: {fileID: 4450026544068382, guid: d6fa50c58d894ae458c8bdf2d61e5eec, type: 3}
       propertyPath: m_LocalScale.x
       value: 2
@@ -30,15 +34,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4450026544068382, guid: d6fa50c58d894ae458c8bdf2d61e5eec, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.0037679821
+      value: 0.008
       objectReference: {fileID: 0}
     - target: {fileID: 4450026544068382, guid: d6fa50c58d894ae458c8bdf2d61e5eec, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.000004529953
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4450026544068382, guid: d6fa50c58d894ae458c8bdf2d61e5eec, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -2.775313
+      value: 9.985149
       objectReference: {fileID: 0}
     - target: {fileID: 4450026544068382, guid: d6fa50c58d894ae458c8bdf2d61e5eec, type: 3}
       propertyPath: m_LocalRotation.w
@@ -79,6 +83,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1036057936651256, guid: d6fa50c58d894ae458c8bdf2d61e5eec, type: 3}
       insertIndex: -1
       addedObject: {fileID: 6840754382084063238}
+    - targetCorrespondingSourceObject: {fileID: 1036057936651256, guid: d6fa50c58d894ae458c8bdf2d61e5eec, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7618157509301160916}
   m_SourcePrefab: {fileID: 100100000, guid: d6fa50c58d894ae458c8bdf2d61e5eec, type: 3}
 --- !u!1 &5825846309815821860 stripped
 GameObject:
@@ -106,3 +113,15 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &7618157509301160916
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5825846309815821860}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76fb05d5c556c2242b223568444ae597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

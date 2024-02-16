@@ -6,54 +6,18 @@ using UnityEngine.SocialPlatforms.Impl;
 
 public class PlayerAttributeBooster : MonoBehaviour
 {
-    void Awake()
-    {
-
-    }
+    [SerializeField] float speedBoostNumber = 5;
+    private PlayerMovement playerMovement;
 
     void Start()
     {
-
+        playerMovement = GetComponent<PlayerMovement>();
     }
 
-    void Update()
-    {  
-
-    }
-
-    private void SpeedBoostHandler()
+    public IEnumerator SpeedBoostController()
     {
-        // if (isSpeedBoost)
-        // {
-        //     // transform.Translate(0, 0, speedBoostForSpeedBooster);
-        //     // playerCollider.enabled = false;
-        //     // rbody.isKinematic = true;
-        // }
-        // else
-        // {
-        //     // playerCollider.enabled = true;
-        //     // rbody.isKinematic = false;
-        // }
-    }
-
-    IEnumerator SpeedBoostController()
-    {
-        // isSpeedBoost = true;
-        yield return new WaitForSeconds(3);
-        // isSpeedBoost = false;
-    }
-    private void OnTriggerEnter(Collider other) 
-    {
-        // if (other.gameObject.tag == "Speed Booster")
-        // {
-        //     Destroy(other.gameObject);
-        //     StartCoroutine(SpeedBoostController());
-        // }
-
-        // if (other.gameObject.tag == "Pizza")
-        // {
-        //     Destroy(other.gameObject);
-        //     score += 1;
-        // }
+        playerMovement.speed = playerMovement.speed + speedBoostNumber;
+        yield return new WaitForSeconds(2.5f);
+        playerMovement.speed = playerMovement.speed - speedBoostNumber;
     }
 }
