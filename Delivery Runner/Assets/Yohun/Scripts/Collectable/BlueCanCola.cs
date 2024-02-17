@@ -4,7 +4,13 @@ using UnityEngine;
 
 public class BlueCanCola : MonoBehaviour
 {
-    [SerializeField] private SoundFxPlayer soundFxPlayer;
+    private SoundFxPlayer soundFxPlayer;
+
+    private void Awake() 
+    {
+        soundFxPlayer = FindObjectOfType<SoundFxPlayer>();
+    }
+
     private void OnTriggerEnter(Collider other)
     {
         PlayerAttributeBooster playerAttributeBooster = other.GetComponent<PlayerAttributeBooster>();
@@ -12,7 +18,7 @@ public class BlueCanCola : MonoBehaviour
         if (playerAttributeBooster != null)
         {
             playerAttributeBooster.StartCoroutine(playerAttributeBooster.SpeedBoostController());
-            //soundFxPlayer.PlayBoostCollectSFX();
+            soundFxPlayer.PlaySpeedBoostCollectSFX();
             gameObject.SetActive(false);
         }
     }

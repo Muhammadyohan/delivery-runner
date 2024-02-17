@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CharacterSelectionController : MonoBehaviour
 {
-    public static int characterSelected;
+    public static int characterSelected = 2;
     
     [SerializeField] private GameObject girlModel;
     [SerializeField] private GameObject boyModel;

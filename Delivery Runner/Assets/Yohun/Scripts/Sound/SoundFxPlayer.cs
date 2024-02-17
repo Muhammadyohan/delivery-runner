@@ -4,16 +4,21 @@ using UnityEngine;
 
 public class SoundFxPlayer : MonoBehaviour
 {
-    [SerializeField] private AudioSource pizzaCollectSFX, boostCollectSFX, knockDownSFX, jumpingSFX, rollingSFX, runningSound;
+    [SerializeField] private AudioSource pizzaCollectSFX, speedBoostCollectSFX, scoreBoostCollectSFX,knockDownSFX, boyJumpingSFX, girlJumpingSFX, rollingSFX, runningSound;
 
     public void PlayPizzaCollectSFX()
     {
         pizzaCollectSFX.Play();
     }
 
-    public void PlayBoostCollectSFX()
+    public void PlaySpeedBoostCollectSFX()
     {
-        boostCollectSFX.Play();
+        speedBoostCollectSFX.Play();
+    }
+
+    public void PlayScoreBoostCollectSFX()
+    {
+        scoreBoostCollectSFX.Play();
     }
 
     public void PlayKnockDownSFX()
@@ -23,7 +28,10 @@ public class SoundFxPlayer : MonoBehaviour
 
     public void PlayJumpingSFX()
     {
-        jumpingSFX.Play();
+        if (CharacterSelectionController.characterSelected == 1)
+            girlJumpingSFX.Play();
+        if (CharacterSelectionController.characterSelected == 2)
+            boyJumpingSFX.Play();
     }
 
     public void PlayRollingSFX()

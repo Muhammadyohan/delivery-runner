@@ -11,7 +11,7 @@ public class PlayerMovement : MonoBehaviour
     public float speed;
     [HideInInspector] public float speedBuffer;
 
-    [SerializeField] private SoundFxPlayer soundFxPlayer;
+    private SoundFxPlayer soundFxPlayer;
     [SerializeField] private float jumpForce;
     [SerializeField] private float buttonGracePeriod;
     [SerializeField] private float fallingCheckNum = 5;
@@ -38,6 +38,7 @@ public class PlayerMovement : MonoBehaviour
 
     void Start()
     {
+        soundFxPlayer = FindObjectOfType<SoundFxPlayer>();
         speedBuffer = speed;
         animator = GetComponent<Animator>();
         characterController = GetComponent<CharacterController>();
@@ -66,7 +67,6 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.W) || Input.GetButtonDown("Jump"))
         {
             jumpButtonPressedTime = Time.time;
-            //soundFxPlayer.PlayJumpingSFX();
         }
 
         //Sliding Keybind
@@ -93,7 +93,7 @@ public class PlayerMovement : MonoBehaviour
             {
                 StartCoroutine(SlidingAnimationHandler());
                 lastRolledTime = Time.time;
-                //soundFxPlayer.PlayRollingSFX();
+                soundFxPlayer.PlayRollingSFX();
                 isRolling = false;
             }
 
@@ -104,6 +104,7 @@ public class PlayerMovement : MonoBehaviour
                 //Handle Animator
                 animator.SetBool("IsJumping", true);
                 isJumping = true;
+                soundFxPlayer.PlayJumpingSFX();
 
                 jumpButtonPressedTime = null;
                 lastGroundedTime = null;
@@ -189,7 +190,7 @@ public class PlayerMovement : MonoBehaviour
         if (other.gameObject.tag == "Obstacle")
         {
             animator.SetBool("IsKnockDown", true);
-            // CameraMovement.Shake(.25f, .1f);
+            soundFxPlayer.PlayKnockDownSFX();
             GameOver.Invoke();
         }
 
@@ -198,7 +199,7 @@ public class PlayerMovement : MonoBehaviour
             if (Time.time - lastRolledTime > rollingIframeTime)
             {
                 animator.SetBool("IsKnockDown", true);
-                // CameraMovement.Shake(.25f, .1f);
+                soundFxPlayer.PlayKnockDownSFX();
                 GameOver.Invoke();
             }
         }

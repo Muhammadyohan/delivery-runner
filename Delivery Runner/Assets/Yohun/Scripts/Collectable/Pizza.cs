@@ -4,7 +4,13 @@ using UnityEngine;
 
 public class Pizza : MonoBehaviour
 {
-    [SerializeField] private SoundFxPlayer soundFxPlayer;
+    private SoundFxPlayer soundFxPlayer;
+    
+    private void Awake() 
+    {
+        soundFxPlayer = FindObjectOfType<SoundFxPlayer>();
+    }
+
     private void OnTriggerEnter(Collider other)
     {
         PlayerInventory playerInventory = other.GetComponent<PlayerInventory>();
@@ -13,7 +19,7 @@ public class Pizza : MonoBehaviour
         {
             playerInventory.PizzaCollected();
             playerInventory.PizzaAmountSpeedBoost();
-            //soundFxPlayer.PlayPizzaCollectSFX();
+            soundFxPlayer.PlayPizzaCollectSFX();
             gameObject.SetActive(false);
         }
     }
