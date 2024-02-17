@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class RedCanCola : MonoBehaviour
 {
+    [SerializeField] private SoundFxPlayer soundFxPlayer;
     private void OnTriggerEnter(Collider other)
     {
         PlayerAttributeBooster playerAttributeBooster = other.GetComponent<PlayerAttributeBooster>();
@@ -11,6 +12,7 @@ public class RedCanCola : MonoBehaviour
         if (playerAttributeBooster != null)
         {
             playerAttributeBooster.StartCoroutine(playerAttributeBooster.CollectBoostController());
+            soundFxPlayer.PlayBoostCollectSFX();
             gameObject.SetActive(false);
         }
     }

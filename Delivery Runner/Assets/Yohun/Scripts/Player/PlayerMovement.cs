@@ -11,6 +11,7 @@ public class PlayerMovement : MonoBehaviour
     public float speed;
     [HideInInspector] public float speedBuffer;
 
+    [SerializeField] private SoundFxPlayer soundFxPlayer;
     [SerializeField] private float jumpForce;
     [SerializeField] private float buttonGracePeriod;
     [SerializeField] private float fallingCheckNum = 5;
@@ -63,7 +64,10 @@ public class PlayerMovement : MonoBehaviour
 
         //Jumping Keybind
         if (Input.GetKeyDown(KeyCode.W) || Input.GetButtonDown("Jump"))
+        {
             jumpButtonPressedTime = Time.time;
+            soundFxPlayer.PlayJumpingSFX();
+        }
 
         //Sliding Keybind
         if (Input.GetKeyDown(KeyCode.S))
@@ -89,6 +93,7 @@ public class PlayerMovement : MonoBehaviour
             {
                 StartCoroutine(SlidingAnimationHandler());
                 lastRolledTime = Time.time;
+                soundFxPlayer.PlayRollingSFX();
                 isRolling = false;
             }
 
@@ -135,12 +140,11 @@ public class PlayerMovement : MonoBehaviour
 
     private void MoveTowardsTarget(Vector3 target)
     {
-        var cc = GetComponent<CharacterController>();
         var offset = target - transform.position;
         if (offset.magnitude > .1f)
         {
             offset = offset * laneSwitchSpeed;
-            cc.Move(offset * Time.deltaTime);
+            characterController.Move(offset * Time.deltaTime);
         }
     }
 
