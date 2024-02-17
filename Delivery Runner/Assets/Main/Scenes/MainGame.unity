@@ -189,6 +189,10 @@ PrefabInstance:
       propertyPath: OnPizzaCollected.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 345860586}
+    - target: {fileID: 7834641624181536440, guid: 948c63da21f7633409353e8227f1544a, type: 3}
+      propertyPath: OnPizzaCollected.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 345860586}
     - target: {fileID: 8577999847366149593, guid: 948c63da21f7633409353e8227f1544a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.1
