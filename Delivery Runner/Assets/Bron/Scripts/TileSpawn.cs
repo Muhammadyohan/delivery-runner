@@ -24,7 +24,7 @@ public class TileSpawn : MonoBehaviour
 
 		for (int i = 0; i < PrefabsOnScreen; i++) 
 		{
-			if (i < 1)
+			if (i < 2)
 				Spawn (0);
 			else
 				Spawn ();       
