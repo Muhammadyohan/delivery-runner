@@ -12,7 +12,7 @@ public class RedCanCola : MonoBehaviour
         if (playerAttributeBooster != null)
         {
             playerAttributeBooster.StartCoroutine(playerAttributeBooster.CollectBoostController());
-            soundFxPlayer.PlayBoostCollectSFX();
+            //soundFxPlayer.PlayBoostCollectSFX();
             gameObject.SetActive(false);
         }
     }

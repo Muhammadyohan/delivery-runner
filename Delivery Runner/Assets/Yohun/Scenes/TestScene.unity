@@ -429,6 +429,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: police car (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7045902156923906803, guid: c9b0a6fdd0de204459f0419be09474aa, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7325558222400810813, guid: c9b0a6fdd0de204459f0419be09474aa, type: 3}
       propertyPath: checkRadius
       value: 100
@@ -1002,6 +1006,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: sport car 7 black (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 104707818384554417, guid: 971f52515e03b294593aeb54d539349f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 736390870478365451, guid: 971f52515e03b294593aeb54d539349f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.01
@@ -1486,6 +1494,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ambulance (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 4865719518029790107, guid: 2c1305f3a9a885c4b8b63046b015c205, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5245940072433967393, guid: 2c1305f3a9a885c4b8b63046b015c205, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.14
@@ -1614,6 +1626,10 @@ PrefabInstance:
       value: Player and Camera
       objectReference: {fileID: 0}
     - target: {fileID: 7222980337953896804, guid: 948c63da21f7633409353e8227f1544a, type: 3}
+      propertyPath: OnPizzaCollected.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 235677737}
+    - target: {fileID: 7834641624181536440, guid: 948c63da21f7633409353e8227f1544a, type: 3}
       propertyPath: OnPizzaCollected.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 235677737}
@@ -1776,6 +1792,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ambulance
       objectReference: {fileID: 0}
+    - target: {fileID: 4865719518029790107, guid: 2c1305f3a9a885c4b8b63046b015c205, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5245940072433967393, guid: 2c1305f3a9a885c4b8b63046b015c205, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.14
@@ -1841,6 +1861,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: police car
       objectReference: {fileID: 0}
+    - target: {fileID: 7045902156923906803, guid: c9b0a6fdd0de204459f0419be09474aa, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7325558222400810813, guid: c9b0a6fdd0de204459f0419be09474aa, type: 3}
       propertyPath: checkRadius
       value: 100
@@ -1905,6 +1929,10 @@ PrefabInstance:
     - target: {fileID: 104707818384554417, guid: 971f52515e03b294593aeb54d539349f, type: 3}
       propertyPath: m_Name
       value: sport car 7 black
+      objectReference: {fileID: 0}
+    - target: {fileID: 104707818384554417, guid: 971f52515e03b294593aeb54d539349f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 736390870478365451, guid: 971f52515e03b294593aeb54d539349f, type: 3}
       propertyPath: m_LocalPosition.x

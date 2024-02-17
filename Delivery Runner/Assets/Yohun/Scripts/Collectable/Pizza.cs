@@ -13,7 +13,7 @@ public class Pizza : MonoBehaviour
         {
             playerInventory.PizzaCollected();
             playerInventory.PizzaAmountSpeedBoost();
-            soundFxPlayer.PlayPizzaCollectSFX();
+            //soundFxPlayer.PlayPizzaCollectSFX();
             gameObject.SetActive(false);
         }
     }

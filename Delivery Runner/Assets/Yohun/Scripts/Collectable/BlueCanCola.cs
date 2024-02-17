@@ -12,7 +12,7 @@ public class BlueCanCola : MonoBehaviour
         if (playerAttributeBooster != null)
         {
             playerAttributeBooster.StartCoroutine(playerAttributeBooster.SpeedBoostController());
-            soundFxPlayer.PlayBoostCollectSFX();
+            //soundFxPlayer.PlayBoostCollectSFX();
             gameObject.SetActive(false);
         }
     }

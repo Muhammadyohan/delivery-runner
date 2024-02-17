@@ -66,7 +66,7 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.W) || Input.GetButtonDown("Jump"))
         {
             jumpButtonPressedTime = Time.time;
-            soundFxPlayer.PlayJumpingSFX();
+            //soundFxPlayer.PlayJumpingSFX();
         }
 
         //Sliding Keybind
@@ -93,7 +93,7 @@ public class PlayerMovement : MonoBehaviour
             {
                 StartCoroutine(SlidingAnimationHandler());
                 lastRolledTime = Time.time;
-                soundFxPlayer.PlayRollingSFX();
+                //soundFxPlayer.PlayRollingSFX();
                 isRolling = false;
             }
 
