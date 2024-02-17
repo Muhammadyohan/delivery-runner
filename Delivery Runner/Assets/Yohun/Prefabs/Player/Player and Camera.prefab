@@ -105,7 +105,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5bc5936bffef4154082f0c55dc725ca1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 195012024505852390}
+  girlCharPlayer: {fileID: 6051492970178838878}
+  boyCharPlayer: {fileID: 195012024505852390}
   offset: {x: 0, y: 0, z: 0}
   smoothTime: 0.1
 --- !u!1 &5228008278672220814
@@ -117,6 +118,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8577999847366149593}
+  - component: {fileID: 4703964416716424442}
   m_Layer: 0
   m_Name: Player and Camera
   m_TagString: Untagged
@@ -142,6 +144,20 @@ Transform:
   - {fileID: 720297539343596380}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4703964416716424442
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5228008278672220814}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8664c7f21261cd144af287e354aa46db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  girlModel: {fileID: 6051492970178838878}
+  boyModel: {fileID: 195012024505852390}
 --- !u!1 &5760142389221794830
 GameObject:
   m_ObjectHideFlags: 0

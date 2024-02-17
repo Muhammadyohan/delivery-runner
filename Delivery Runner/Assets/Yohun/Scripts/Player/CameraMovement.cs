@@ -5,7 +5,9 @@ using DG.Tweening;
 public class CameraMovement : MonoBehaviour 
 {
     // public static CameraMovement Instance;
-	public GameObject player;
+    [SerializeField] private GameObject girlCharPlayer;
+    [SerializeField] private GameObject boyCharPlayer;
+	private GameObject player;
 	public Vector3 offset;
     private Vector3 velocity;
     private Vector3 newPosForSmoothing;
@@ -22,6 +24,14 @@ public class CameraMovement : MonoBehaviour
 
 	void Start () 
     {
+        if (CharacterSelectionController.characterSelected == 1)
+        {
+            player = girlCharPlayer;
+        }
+        if (CharacterSelectionController.characterSelected == 2)
+        {
+            player = boyCharPlayer;
+        }
 		offset = transform.position - player.transform.position;
 	}
 	
