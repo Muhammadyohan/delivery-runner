@@ -133,7 +133,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4685802093977483623, guid: 948c63da21f7633409353e8227f1544a, type: 3}
       propertyPath: jumpForce
-      value: 7.5
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4685802093977483623, guid: 948c63da21f7633409353e8227f1544a, type: 3}
       propertyPath: laneSwitchSpeed
@@ -142,6 +142,10 @@ PrefabInstance:
     - target: {fileID: 4685802093977483623, guid: 948c63da21f7633409353e8227f1544a, type: 3}
       propertyPath: rollingIframeTime
       value: 0.35
+      objectReference: {fileID: 0}
+    - target: {fileID: 4685802093977483623, guid: 948c63da21f7633409353e8227f1544a, type: 3}
+      propertyPath: laneSwitchDistance
+      value: 3.8
       objectReference: {fileID: 0}
     - target: {fileID: 5228008278672220814, guid: 948c63da21f7633409353e8227f1544a, type: 3}
       propertyPath: m_Name
@@ -437,6 +441,7 @@ MonoBehaviour:
   Prefabs:
   - {fileID: 7897465313828899401, guid: 3f5dde30810830e4c9d367c7c09d9dd7, type: 3}
   - {fileID: 748259444329187286, guid: 4945d661cc9688749b3bb16a9a6801fd, type: 3}
+  - {fileID: 7029918075971982621, guid: 7a19ed6e3ec325c48bf94384674f0562, type: 3}
   - {fileID: 2919788169907495991, guid: e63a4fe9023c6b748920f2f334aea81e, type: 3}
   BackArea: 119
   PrefabsOnScreen: 4
