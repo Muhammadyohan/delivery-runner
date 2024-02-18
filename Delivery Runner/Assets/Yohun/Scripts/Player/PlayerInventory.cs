@@ -18,15 +18,6 @@ public class PlayerInventory : MonoBehaviour
 
     void Start()
     {
-        if (PlayerPrefs.HasKey("HighScore"))
-        {
-            hiPizzaScore = PlayerPrefs.GetInt("HighScore");
-        }
-        else
-        {
-            hiPizzaScore = 0;
-        }
-
         playerMovement = GetComponent<PlayerMovement>();
     }
 
