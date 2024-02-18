@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CarMovement : MonoBehaviour
 {
-    [SerializeField] private float carSpeed = 0.3f;
+    [SerializeField] private float carSpeed = 0.2f;
     [SerializeField] private Vector3 checkRadius;
 
     public LayerMask player;
