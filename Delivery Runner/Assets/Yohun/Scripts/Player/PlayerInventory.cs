@@ -22,6 +22,10 @@ public class PlayerInventory : MonoBehaviour
         {
             hiPizzaScore = PlayerPrefs.GetInt("HighScore");
         }
+        else
+        {
+            hiPizzaScore = 0;
+        }
 
         playerMovement = GetComponent<PlayerMovement>();
     }
