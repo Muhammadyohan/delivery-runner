@@ -14,16 +14,33 @@ public class PlayerInventory : MonoBehaviour
 
     public float numberOfPizza = 0;
 
-    public void PizzaCollected()
-    {
-        NumberOfPizza += pizzaAmountScore;
-        numberOfPizza += pizzaAmountScore;
-        OnPizzaCollected.Invoke(this);
-    }
+    public static int hiPizzaScore;
 
     void Start()
     {
+        if (PlayerPrefs.HasKey("HighScore"))
+        {
+            hiPizzaScore = PlayerPrefs.GetInt("HighScore");
+        }
+        else
+        {
+            hiPizzaScore = 0;
+        }
+
         playerMovement = GetComponent<PlayerMovement>();
+    }
+
+    public void PizzaCollected()
+    {
+        if (NumberOfPizza > hiPizzaScore)
+        {
+            hiPizzaScore = NumberOfPizza;
+            PlayerPrefs.SetInt("HighScore", hiPizzaScore);
+        }
+
+        NumberOfPizza += pizzaAmountScore;
+        numberOfPizza += pizzaAmountScore;
+        OnPizzaCollected.Invoke(this);
     }
 
     public void PizzaAmountSpeedBoost()
