@@ -18,10 +18,6 @@ public class BestScoreShow : MonoBehaviour
         {
             highestScore = 0;
         }
-    }
-
-    void Update()
-    {
         scoreText.text = highestScore.ToString();
     }
 }
