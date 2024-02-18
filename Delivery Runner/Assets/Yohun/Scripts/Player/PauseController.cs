@@ -40,13 +40,13 @@ public class PauseController : MonoBehaviour
 
     public void PauseGame()
     {
+        Time.timeScale = 0;
         carMovement = FindObjectsOfType(typeof(CarMovement)) as CarMovement[];
         foreach (CarMovement car in carMovement)
         {
             car.gameObject.GetComponent<CarMovement>().enabled = false;
         }
         GamePaused.Invoke();
-        Time.timeScale = 0;
     }
 
     public void ResumeGame()
