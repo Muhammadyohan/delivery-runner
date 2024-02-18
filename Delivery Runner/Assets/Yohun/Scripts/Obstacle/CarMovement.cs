@@ -10,7 +10,7 @@ public class CarMovement : MonoBehaviour
     public LayerMask player;
     private Collider[] colliders;
 
-    void Update()
+    void FixedUpdate()
     {
         colliders = Physics.OverlapBox(transform.position, checkRadius, Quaternion.identity, player);
         foreach (Collider coll in colliders)

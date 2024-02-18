@@ -32,15 +32,18 @@ public class CameraMovement : MonoBehaviour
         {
             player = boyCharPlayer;
         }
-		offset = transform.position - player.transform.position;
+		offset = thisTransform.position - player.transform.position;
 	}
 	
     void LateUpdate ()
     {
-        newPosForSmoothing.x = Mathf.SmoothDamp(thisTransform.position.x, player.transform.position.x + offset.x, ref velocity.x, smoothTime);
-        newPosForSmoothing.y = Mathf.SmoothDamp(thisTransform.position.y, player.transform.position.y + offset.y, ref velocity.y, smoothTime);
-        newPosForSmoothing.z = player.transform.position.z + offset.z;
-        transform.position = Vector3.Slerp(thisTransform.position, newPosForSmoothing, Time.time);
+        if (Time.timeScale == 1)
+        {
+            newPosForSmoothing.x = Mathf.SmoothDamp(thisTransform.position.x, player.transform.position.x + offset.x, ref velocity.x, smoothTime);
+            newPosForSmoothing.y = Mathf.SmoothDamp(thisTransform.position.y, player.transform.position.y + offset.y, ref velocity.y, smoothTime);
+            newPosForSmoothing.z = player.transform.position.z + offset.z;
+            thisTransform.position = Vector3.Slerp(thisTransform.position, newPosForSmoothing, Time.time);
+        }
     }
 
     // private IEnumerator OnShake(float duration, float strength)
