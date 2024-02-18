@@ -14,7 +14,12 @@ public class CharacterSelection : MonoBehaviour
     public void PlayGame()
     {
         LoadingScreen.SetActive(true);
-        StartCoroutine(LoadSceneAsync(1));
+        StartCoroutine(LoadSceneAsync(2));
+    }
+
+    public void BackToMainMenu()
+    {
+        SceneManager.LoadSceneAsync(0);
     }
 
     public void GirlSelected()
