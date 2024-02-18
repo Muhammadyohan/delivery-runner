@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.34721658, g: 0.6317413, b: 0.8704321, a: 1}
+  m_IndirectSpecularColor: {r: 0.34721485, g: 0.63173145, b: 0.8704592, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1221,6 +1221,14 @@ PrefabInstance:
       propertyPath: GameResumed.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 1364626029}
+    - target: {fileID: 6443741159057080142, guid: 948c63da21f7633409353e8227f1544a, type: 3}
+      propertyPath: far clip plane
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 6443741159057080142, guid: 948c63da21f7633409353e8227f1544a, type: 3}
+      propertyPath: near clip plane
+      value: 0.3
+      objectReference: {fileID: 0}
     - target: {fileID: 7222980337953896804, guid: 948c63da21f7633409353e8227f1544a, type: 3}
       propertyPath: OnPizzaCollected.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
