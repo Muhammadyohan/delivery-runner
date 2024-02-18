@@ -448,6 +448,18 @@ PrefabInstance:
       value: 85
       objectReference: {fileID: 0}
     - target: {fileID: 7325558222400810813, guid: c9b0a6fdd0de204459f0419be09474aa, type: 3}
+      propertyPath: checkRadius.x
+      value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 7325558222400810813, guid: c9b0a6fdd0de204459f0419be09474aa, type: 3}
+      propertyPath: checkRadius.y
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 7325558222400810813, guid: c9b0a6fdd0de204459f0419be09474aa, type: 3}
+      propertyPath: checkRadius.z
+      value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 7325558222400810813, guid: c9b0a6fdd0de204459f0419be09474aa, type: 3}
       propertyPath: player.m_Bits
       value: 64
       objectReference: {fileID: 0}
@@ -832,6 +844,18 @@ PrefabInstance:
       value: 85
       objectReference: {fileID: 0}
     - target: {fileID: 7325558222400810813, guid: c9b0a6fdd0de204459f0419be09474aa, type: 3}
+      propertyPath: checkRadius.x
+      value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 7325558222400810813, guid: c9b0a6fdd0de204459f0419be09474aa, type: 3}
+      propertyPath: checkRadius.y
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 7325558222400810813, guid: c9b0a6fdd0de204459f0419be09474aa, type: 3}
+      propertyPath: checkRadius.z
+      value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 7325558222400810813, guid: c9b0a6fdd0de204459f0419be09474aa, type: 3}
       propertyPath: player.m_Bits
       value: 64
       objectReference: {fileID: 0}
@@ -1098,6 +1122,18 @@ PrefabInstance:
     - target: {fileID: 7325558222400810813, guid: c9b0a6fdd0de204459f0419be09474aa, type: 3}
       propertyPath: checkRadius
       value: 85
+      objectReference: {fileID: 0}
+    - target: {fileID: 7325558222400810813, guid: c9b0a6fdd0de204459f0419be09474aa, type: 3}
+      propertyPath: checkRadius.x
+      value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 7325558222400810813, guid: c9b0a6fdd0de204459f0419be09474aa, type: 3}
+      propertyPath: checkRadius.y
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 7325558222400810813, guid: c9b0a6fdd0de204459f0419be09474aa, type: 3}
+      propertyPath: checkRadius.z
+      value: 80
       objectReference: {fileID: 0}
     - target: {fileID: 7325558222400810813, guid: c9b0a6fdd0de204459f0419be09474aa, type: 3}
       propertyPath: player.m_Bits
@@ -1482,6 +1518,18 @@ PrefabInstance:
     - target: {fileID: 7325558222400810813, guid: c9b0a6fdd0de204459f0419be09474aa, type: 3}
       propertyPath: checkRadius
       value: 85
+      objectReference: {fileID: 0}
+    - target: {fileID: 7325558222400810813, guid: c9b0a6fdd0de204459f0419be09474aa, type: 3}
+      propertyPath: checkRadius.x
+      value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 7325558222400810813, guid: c9b0a6fdd0de204459f0419be09474aa, type: 3}
+      propertyPath: checkRadius.y
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 7325558222400810813, guid: c9b0a6fdd0de204459f0419be09474aa, type: 3}
+      propertyPath: checkRadius.z
+      value: 80
       objectReference: {fileID: 0}
     - target: {fileID: 7325558222400810813, guid: c9b0a6fdd0de204459f0419be09474aa, type: 3}
       propertyPath: player.m_Bits
@@ -1966,6 +2014,18 @@ PrefabInstance:
       value: 85
       objectReference: {fileID: 0}
     - target: {fileID: 1521893464410607917, guid: 971f52515e03b294593aeb54d539349f, type: 3}
+      propertyPath: checkRadius.x
+      value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 1521893464410607917, guid: 971f52515e03b294593aeb54d539349f, type: 3}
+      propertyPath: checkRadius.y
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 1521893464410607917, guid: 971f52515e03b294593aeb54d539349f, type: 3}
+      propertyPath: checkRadius.z
+      value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 1521893464410607917, guid: 971f52515e03b294593aeb54d539349f, type: 3}
       propertyPath: player.m_Bits
       value: 64
       objectReference: {fileID: 0}
@@ -2192,6 +2252,18 @@ PrefabInstance:
       value: 85
       objectReference: {fileID: 0}
     - target: {fileID: 7325558222400810813, guid: c9b0a6fdd0de204459f0419be09474aa, type: 3}
+      propertyPath: checkRadius.x
+      value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 7325558222400810813, guid: c9b0a6fdd0de204459f0419be09474aa, type: 3}
+      propertyPath: checkRadius.y
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 7325558222400810813, guid: c9b0a6fdd0de204459f0419be09474aa, type: 3}
+      propertyPath: checkRadius.z
+      value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 7325558222400810813, guid: c9b0a6fdd0de204459f0419be09474aa, type: 3}
       propertyPath: player.m_Bits
       value: 64
       objectReference: {fileID: 0}
@@ -2384,6 +2456,18 @@ PrefabInstance:
     - target: {fileID: 7325558222400810813, guid: c9b0a6fdd0de204459f0419be09474aa, type: 3}
       propertyPath: checkRadius
       value: 85
+      objectReference: {fileID: 0}
+    - target: {fileID: 7325558222400810813, guid: c9b0a6fdd0de204459f0419be09474aa, type: 3}
+      propertyPath: checkRadius.x
+      value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 7325558222400810813, guid: c9b0a6fdd0de204459f0419be09474aa, type: 3}
+      propertyPath: checkRadius.y
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 7325558222400810813, guid: c9b0a6fdd0de204459f0419be09474aa, type: 3}
+      propertyPath: checkRadius.z
+      value: 80
       objectReference: {fileID: 0}
     - target: {fileID: 7325558222400810813, guid: c9b0a6fdd0de204459f0419be09474aa, type: 3}
       propertyPath: player.m_Bits

@@ -5,13 +5,13 @@ using UnityEngine;
 public class CarMovement : MonoBehaviour
 {
     [SerializeField] private float carSpeed = 1f;
-    [SerializeField] private float checkRadius;
+    [SerializeField] private Vector3 checkRadius;
 
     public LayerMask player;
     private Collider[] colliders;
     void Update()
     {
-        colliders = Physics.OverlapSphere(transform.position, checkRadius, player);
+        colliders = Physics.OverlapBox(transform.position, checkRadius, Quaternion.identity, player);
         foreach (Collider coll in colliders)
         {
             if (coll.gameObject.tag == "Player")
