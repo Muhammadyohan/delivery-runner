@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SoundFxPlayer : MonoBehaviour
 {
-    [SerializeField] private AudioSource pizzaCollectSFX, speedBoostCollectSFX, scoreBoostCollectSFX,knockDownSFX, boyJumpingSFX, girlJumpingSFX, rollingSFX;
+    [SerializeField] private AudioSource pizzaCollectSFX, speedBoostCollectSFX, scoreBoostCollectSFX,knockDownSFX, boyJumpingSFX, girlJumpingSFX, rollingSFX, switchLaneSFX;
 
     public void PlayPizzaCollectSFX()
     {
@@ -37,6 +37,11 @@ public class SoundFxPlayer : MonoBehaviour
     public void PlayRollingSFX()
     {
         rollingSFX.Play();
+    }
+
+    public void PlayerSwitchLaneSFX()
+    {
+        switchLaneSFX.Play();
     }
 
     // public void PlaySlashSFX()

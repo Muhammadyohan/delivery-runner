@@ -165,6 +165,7 @@ public class PlayerMovement : MonoBehaviour
                 {
                     lane = Lane.Lane1;
                 }
+                soundFxPlayer.PlayerSwitchLaneSFX();
             }
         }
         //Prees D for moving right
@@ -181,6 +182,7 @@ public class PlayerMovement : MonoBehaviour
                 {
                     lane = Lane.Lane3;
                 }
+                soundFxPlayer.PlayerSwitchLaneSFX();
             }
         }
     }

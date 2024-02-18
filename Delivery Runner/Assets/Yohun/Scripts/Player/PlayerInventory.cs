@@ -46,5 +46,6 @@ public class PlayerInventory : MonoBehaviour
     public void PizzaAmountSpeedBoost()
     {
         playerMovement.speed += numberOfPizza/10000;
+        playerMovement.speedBuffer += numberOfPizza/10000;
     }
 }
