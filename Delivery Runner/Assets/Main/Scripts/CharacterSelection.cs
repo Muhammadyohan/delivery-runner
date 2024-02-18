@@ -14,6 +14,7 @@ public class CharacterSelection : MonoBehaviour
 
     private void Start()
     {
+        CharacterSelectionController.characterSelected = 2;
         Time.timeScale = 1;
     }
 
