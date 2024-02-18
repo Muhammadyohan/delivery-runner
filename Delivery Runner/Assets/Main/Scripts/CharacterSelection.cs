@@ -11,6 +11,12 @@ public class CharacterSelection : MonoBehaviour
     public GameObject GirlModel;
 
     public Image LoadingBarFill;
+
+    private void Start()
+    {
+        Time.timeScale = 1;
+    }
+
     public void PlayGame()
     {
         LoadingScreen.SetActive(true);
