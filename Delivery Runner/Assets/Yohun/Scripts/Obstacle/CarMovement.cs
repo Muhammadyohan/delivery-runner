@@ -4,18 +4,11 @@ using UnityEngine;
 
 public class CarMovement : MonoBehaviour
 {
-    [SerializeField] private float carSpeed = 1f;
+    [SerializeField] private float carSpeed = 0.3f;
     [SerializeField] private Vector3 checkRadius;
-
-    private PlayerMovement playerMovement;
 
     public LayerMask player;
     private Collider[] colliders;
-
-    void Start() 
-    {
-        playerMovement = FindObjectOfType<PlayerMovement>();
-    }
 
     void Update()
     {
@@ -24,7 +17,6 @@ public class CarMovement : MonoBehaviour
         {
             if (coll.gameObject.tag == "Player")
             {
-                carSpeed = playerMovement.speedBuffer / 20;
                 transform.Translate(0, 0, carSpeed);
             }
         }

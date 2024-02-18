@@ -45,14 +45,14 @@ public class PauseController : MonoBehaviour
         {
             car.gameObject.GetComponent<CarMovement>().enabled = false;
         }
-        Time.timeScale = 0;
         GamePaused.Invoke();
+        Time.timeScale = 0;
     }
 
     public void ResumeGame()
     {
-        GameResumed.Invoke();
         Time.timeScale = 1;
+        GameResumed.Invoke();
         carMovement = FindObjectsOfType(typeof(CarMovement)) as CarMovement[];
         foreach (CarMovement car in carMovement)
         {
