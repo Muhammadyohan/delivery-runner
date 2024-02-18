@@ -32,12 +32,6 @@ public class PlayerInventory : MonoBehaviour
 
     public void PizzaCollected()
     {
-        if (NumberOfPizza > hiPizzaScore)
-        {
-            hiPizzaScore = NumberOfPizza;
-            PlayerPrefs.SetInt("HighScore", hiPizzaScore);
-        }
-
         NumberOfPizza += pizzaAmountScore;
         numberOfPizza += pizzaAmountScore;
         OnPizzaCollected.Invoke(this);
@@ -47,5 +41,14 @@ public class PlayerInventory : MonoBehaviour
     {
         playerMovement.speed += numberOfPizza/10000;
         playerMovement.speedBuffer += numberOfPizza/10000;
+    }
+
+    public void SaveHighScore()
+    {
+        if (NumberOfPizza > hiPizzaScore)
+        {
+            hiPizzaScore = NumberOfPizza;
+            PlayerPrefs.SetInt("HighScore", hiPizzaScore);
+        }
     }
 }

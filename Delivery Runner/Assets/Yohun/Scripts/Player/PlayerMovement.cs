@@ -38,6 +38,7 @@ public class PlayerMovement : MonoBehaviour
 
     void Start()
     {
+        Time.timeScale = 1;
         soundFxPlayer = FindObjectOfType<SoundFxPlayer>();
         speedBuffer = speed;
         animator = GetComponent<Animator>();

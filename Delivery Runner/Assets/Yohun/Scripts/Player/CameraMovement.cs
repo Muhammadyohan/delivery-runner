@@ -61,7 +61,6 @@ public class CameraMovement : MonoBehaviour
 	IEnumerator Shake (float duration, float magnitude)
     {
         Vector3 originalPos = transform.localPosition;
-        Debug.Log(originalPos);
 
         float elapsed = 0.0f;
 

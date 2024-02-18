@@ -8,24 +8,55 @@ public class PauseController : MonoBehaviour
     public UnityEvent GamePaused;
     public UnityEvent GameResumed;
 
-    private bool _isPaused;
+    private KnockDownController knockDownController;
+    private CarMovement[]? carMovement;
+
+    public bool _isPaused;
+
+    void Start()
+    {
+        knockDownController = GetComponent<KnockDownController>();
+    }
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (!knockDownController._isGameOver)
         {
-            _isPaused = !_isPaused;
+            if (Input.GetKeyDown(KeyCode.Escape))
+            {
+                _isPaused = !_isPaused;
 
-            if (_isPaused)
-            {
-                Time.timeScale = 0;
-                GamePaused.Invoke();
+                if (_isPaused)
+                {
+                    PauseGame();
+                }
+                else
+                {
+                    ResumeGame();
+                }
             }
-            else
-            {
-                Time.timeScale = 1;
-                GameResumed.Invoke();
-            }
+        }
+    }
+
+    public void PauseGame()
+    {
+        carMovement = FindObjectsOfType(typeof(CarMovement)) as CarMovement[];
+        foreach (CarMovement car in carMovement)
+        {
+            car.gameObject.GetComponent<CarMovement>().enabled = false;
+        }
+        Time.timeScale = 0;
+        GamePaused.Invoke();
+    }
+
+    public void ResumeGame()
+    {
+        GameResumed.Invoke();
+        Time.timeScale = 1;
+        carMovement = FindObjectsOfType(typeof(CarMovement)) as CarMovement[];
+        foreach (CarMovement car in carMovement)
+        {
+            car.gameObject.GetComponent<CarMovement>().enabled = true;
         }
     }
 }
